@@ -20,4 +20,15 @@ public class Course {
 
     @OneToMany(mappedBy = "sessionCourse")
     private Collection<Session> SessionList = new ArrayList<>();
+
+    @Override
+    public String toString() {
+        return "Course{" +
+                "id=" + id +
+                ", titre='" + titre + '\'' +
+                ", description='" + description + '\'' +
+                ", courseGivenByProfessor=" + courseGivenByProfessor +
+                ", sessionList=" + SessionList +
+                '}';
+    }
 }

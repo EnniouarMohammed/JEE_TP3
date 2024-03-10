@@ -86,4 +86,15 @@ public class Session {
         this.sessionCourse = sessionCourse;
         this.studentsList = studentsList;
     }
+    @Override
+    public String toString() {
+        return "Session{" +
+                "id=" + id +
+                ", date=" + dateFormat.format(date) +
+                ", h_start=" + timeFormat.format(h_start) +
+                ", h_end=" + timeFormat.format(h_end) +
+                ", sessionCourse=" + sessionCourse +
+                ", studentsList=" + studentsList +
+                '}';
+    }
 }

@@ -1,7 +1,4 @@
 package com.tpjee.tp3.dao.entities;
-
-
-
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -19,4 +16,13 @@ public class Student {
 
     @ManyToMany(mappedBy = "studentsList")
     private Collection<Session> sessionList = new ArrayList<>();
+
+    @Override
+    public String toString() {
+        return "Student{" +
+                "id=" + id +
+                ", name='" + Name + '\'' +
+                ", matricule='" + Matricule + '\'' +
+                '}';
+    }
 }

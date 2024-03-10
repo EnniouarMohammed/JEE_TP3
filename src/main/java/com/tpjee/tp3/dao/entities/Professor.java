@@ -54,4 +54,12 @@ public class Professor {
         this.d_affectation = dateFormat.parse(d_affectation);
         this.courseToGive = courseToGive;
     }
+    @Override
+    public String toString() {
+        return "Professor{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", d_affectation=" + dateFormat.format(d_affectation) +
+                '}';
+    }
 }
